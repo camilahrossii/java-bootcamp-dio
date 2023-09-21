@@ -1,10 +1,15 @@
 public class MinhaClasse {
 
-public static void main (String [] args) { // inicialização
+public static void main (String [] args) {
+    String primeiroNome = "Camila";
+    String segundoNome = "Rossi";
 
-    System.out.print("Hello World");
-    // criamos a classe System(classe de sistema), que vai nos dar uma saída (out), que vai ser a impressão
+    String nomeCompleto = nomeCompleto (primeiroNome,segundoNome); // primero:variavel, segundo:método(tem parâmetros)
+    System.out.println(nomeCompleto);
+}
 
+public static String nomeCompleto (String primeiroNome, String segundoNome) {
+    return "Resultado do método: " + primeiroNome.concat(" ").concat(segundoNome);
 }
 
 }
